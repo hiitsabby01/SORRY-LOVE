@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I'm Sorry Bushra 💔🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffd6e8, #fff0f6);
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 40px;
+      color: #444;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      color: #ff4d88;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .card {
+      background: white;
+      border-radius: 25px;
+      padding: 35px;
+      max-width: 650px;
+      margin: auto;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    p {
+      font-size: 1.15em;
+      line-height: 1.7;
+    }
+
+    h2 {
+      color: #ff4d88;
+      margin-top: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #ffe6f0;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 12px;
+      font-size: 1.05em;
+    }
+
+    button {
+      background: #ff4d88;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 25px;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    button:hover {
+      background: #ff1a66;
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 25px;
+      font-size: 1.3em;
+      color: #ff4d88;
+    }
+
+    .heart {
+      font-size: 2em;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>I'm really sorry, Bushra 💔</h1>
+
+  <div class="card">
+    <p>
+      Dear <strong>Bushra</strong>,<br><br>
+      I messed up. I forgot your birthday — and I hate that I did.
+      Not because I don’t care, but because my brain betrayed me
+      in the worst possible way.
+    </p>
+
+    <p>
+      You mean so much to me, and I never want to be the reason
+      you feel unimportant or forgotten. You deserve all the love,
+      all the attention, and the BEST birthdays.
+    </p>
+
+    <h2>Reasons Why You’re My Favorite Person 🎀</h2>
+    <ul>
+      <li>You’re always there for me, no matter what</li>
+      <li>You make everything feel lighter</li>
+      <li>You understand me like no one else</li>
+      <li>You deserve to be celebrated every single day</li>
+    </ul>
+
+    <p>
+      This website is my very small attempt at saying:
+      I’m sorry, I love you, and I promise to make it up to you 💗
+    </p>
+
+    <button onclick="forgive()">Can you forgive me? 🥺</button>
+
+    <div id="forgiven" class="hidden">
+      <span class="heart">💖</span><br>
+      YAY! Thank you, Bushra 😭<br>
+      I owe you cake, gifts, and unlimited love forever.
+    </div>
+  </div>
+
+  <script>
+    function forgive() {
+      document.getElementById("forgiven").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
